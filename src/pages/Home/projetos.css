@@ -1,0 +1,93 @@
+.projects {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;/*joga pra linha de baixo caso não caiba na linha os blocos*/
+    transition: 1s;
+    margin: 60px 0px
+}
+
+.projects .card{
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin: 60px 0px;
+}
+
+.projects .card .face{
+    width: 200px;
+    height: 250px;
+    transition: 0.5s;
+    color: #333;
+    border-radius: 10px;
+    display: block;
+}
+
+.projects .card .face.face1{
+    position: relative;/*estudar a fundo*/
+    background: #212226;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateX(100px);
+}
+
+.projects .card:hover .face.face1{
+    transform: translateY(0);
+}
+
+.projects .card .face.face1 .content{
+    text-align: center;
+    opacity: 1;
+}
+
+.projects .card .face.face1 .content img{
+    max-width: 150px;
+}
+
+.projects .card .face.face1 .content h3{
+    margin: 10px 0 0;
+    padding: 0;
+    color: #f2f2f2;
+    text-align: center;
+    font-size: 1.5em;/*colocar espaçamento e mudar cor da letra*/
+}
+
+.projects .card .face.face2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transform: translateX(-100px);
+    opacity: 0;
+}
+
+.projects .card:hover .face.face2{
+    opacity: 1;
+    transform: translateY(0px);
+    background: #F2F2F2;
+}
+
+.projects .card .face.face2 .content p{
+    margin: 0;
+    padding: 0;
+}
+
+.projects .card .face.face2 .content a{
+    margin: 15px 0 0;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #333;
+    padding: 3px;
+    border: 1px solid #333;
+}
+
+.projects .card .face.face2 .content a:hover {
+    background: #333;
+    color: #F2F2F2;
+}

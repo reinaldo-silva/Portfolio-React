@@ -4,6 +4,10 @@
     --text-color: #fff;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +16,8 @@
 
 h1{
     text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 body{
@@ -24,5 +30,66 @@ body, input, button {
 }
 
 h1, h2, h3, h4, h5, h6{
-    font-family: Ubuntu;
+    font-family: Roboto;
+}
+
+.linha{
+    width: 250px;
+    height: 4px;
+    background: #FFF;
+    margin-top: 5px;
+}
+
+.titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+ 
+/*-------------------------------------------------------------------------------------------------*/ 
+
+.sobre {
+    background: #303033;
+}
+
+.sobre-conteudo img {
+    width: 350px;
+    height: 420px;
+    border-radius: 10px;
+}
+
+.sobre-conteudo{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 0px;
+}
+
+.sobre-conteudo .texto{
+    width: 50%;
+    margin: 30px;
+    text-align: center;
+
+}
+
+@media screen and (max-width:600px){
+    .sobre-conteudo .texto{
+        width: auto;
+    }
+}
+
+/*----------------------------------------------------------------------------------------------*/
+
+body::-webkit-scrollbar{
+    width: 0.45rem;
+}
+
+body::-webkit-scrollbar-track{
+    background: grey;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #4218D9;
 }

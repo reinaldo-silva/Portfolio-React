@@ -1,0 +1,66 @@
+
+/************************************************************************************************/
+
+.skills-slide {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    transition: 1s;
+    margin: 60px 0px;
+    align-content: center;
+}
+
+.skills-slide .card{
+    position: relative;
+    display: flex;
+    margin: 60px 0px;
+    justify-content: center;
+}
+
+.skills-slide .card .face{
+    width: 100px;
+    height: 100px;
+    transition: 0.5s;
+    display: block;
+}
+
+.skills-slide .card .face.imagem{
+    position: relative;/*estudara  fundo*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; /*estudar*/
+    transform: translateX(50px);
+}
+
+.skills-slide .card:hover .face.imagem{
+    transform: translateX(0);
+}
+
+.skills-slide .card .face.imagem .content img{
+    width: 100px;
+    height: 100px;
+}
+
+.skills-slide .card .face.texto{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transform: translateX(-50px);
+}
+
+.skills-slide .card:hover .face.texto{
+    transform: translateX(0px);
+}
+
+.skills-slide .card .face.texto .content p{
+    margin: 0;
+    padding-left: 0;
+    font-size: 50px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+

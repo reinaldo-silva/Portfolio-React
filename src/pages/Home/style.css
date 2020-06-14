@@ -1,14 +1,184 @@
-img{
-    width: 400px;
-    height: 400px;
+#toggle, #close{
+    position: absolute;
+    background: none;
+    border: none; 
 }
+
+.slideIcon{
+    width: 33px;
+    height: 33px;
+    margin: 30px;
+    color: #FFF;
+    transition: 0.3s;
+
+}
+
+.slideIcon:hover{
+    opacity: 0.5;
+}
+
+footer .slideIcon{
+    margin: 5px 20px 40px 20px;
+}
+
+.iconeMenu {
+    position: fixed;
+    z-index: 199;
+}
+
+#divisao {
+    background: #FFF;
+    width: 180px;
+    height: 1px;
+}
+
+/*---------------------------------------------------------------------------------------*/
+
+.icones-social {
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    float: right;
+    width: auto;
+}
+
+.icones-social img {
+    width: 33px;
+    height: 33px;
+    transition: 0.3s;
+    margin: 0px 10px;
+}
+
+.icones-social img:hover{
+    opacity: 0.5;
+}
+
+/*-------------------------------------------------------------------------------------------*/
 
 .conteudo{
     justify-content: center;
     text-align: center;
-    margin-top: 200px ;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin-bottom: 100px;
 }
 
-h1{
+.home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 85px 0px;
+}
+
+.home a {
+    width: 350px;
+    height: 50px;
+    background: #212226;
+    border: solid #FFF 1px;
+    display: flex;
+    align-items: center;
+    color: #FFF;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.home a:hover{
+    opacity: 0.5;
+}
+
+.home span{
+    padding-top: 8px;
+    width: 35%;
+}
+
+.home h1{
+    text-transform: uppercase;    
     font-size: 56px;
+    letter-spacing: 2px;
+}
+
+.home img {
+    height: 400px;
+    width: 400px;
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+
+#botao-voltar img{
+    width: 40px;
+    height: 40px;
+    color: #FFF;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    transition: 0.3s;
+    z-index: 10;
+}
+
+#botao-voltar img:hover{
+    opacity: 0.5;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+
+.rodape{
+    background: #303033;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    padding-bottom: 45px;
+}
+
+.rodape span{
+    font-size: 20px;
+    margin: 6px;
+}
+
+/*-------------------------------------------------------------------------*/
+
+.barra-slide {
+    height: 100vh;
+    background: #303033;
+    color: #FFF;
+    width: 250px;
+    position: fixed;
+    z-index: 200;
+    left: -100%;
+    border-right: 0.5px solid #FFF;
+    animation: slide-open 0.75s forwards;
+}
+
+.conteudo-slide {
+    height: 80%;
+}
+
+.barra-slide footer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    height: 20%;
+}
+
+
+
+.barra-slide.close{
+    left: 0;
+    animation: slide-closed 1s forwards;
+}
+
+@keyframes slide-open {
+    100%{ left: 0}
+}
+
+@keyframes slide-closed {
+    100%{ left: -100%}
 }
