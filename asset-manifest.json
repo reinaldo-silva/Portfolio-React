@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Portfolio-React/static/css/main.55e9cd37.chunk.css",
-    "main.js": "/Portfolio-React/static/js/main.d47ac553.chunk.js",
-    "main.js.map": "/Portfolio-React/static/js/main.d47ac553.chunk.js.map",
-    "runtime-main.js": "/Portfolio-React/static/js/runtime-main.122f2cc7.js",
-    "runtime-main.js.map": "/Portfolio-React/static/js/runtime-main.122f2cc7.js.map",
-    "static/js/2.d2cbc600.chunk.js": "/Portfolio-React/static/js/2.d2cbc600.chunk.js",
-    "static/js/2.d2cbc600.chunk.js.map": "/Portfolio-React/static/js/2.d2cbc600.chunk.js.map",
+    "main.css": "/Portfolio-React/static/css/main.12e80f5b.chunk.css",
+    "main.js": "/Portfolio-React/static/js/main.150aca0e.chunk.js",
+    "main.js.map": "/Portfolio-React/static/js/main.150aca0e.chunk.js.map",
+    "runtime-main.js": "/Portfolio-React/static/js/runtime-main.0ff99c52.js",
+    "runtime-main.js.map": "/Portfolio-React/static/js/runtime-main.0ff99c52.js.map",
+    "static/js/2.94be463d.chunk.js": "/Portfolio-React/static/js/2.94be463d.chunk.js",
+    "static/js/2.94be463d.chunk.js.map": "/Portfolio-React/static/js/2.94be463d.chunk.js.map",
     "index.html": "/Portfolio-React/index.html",
-    "precache-manifest.cf3d4fb5ded5e0adad4c24f97c74c3af.js": "/Portfolio-React/precache-manifest.cf3d4fb5ded5e0adad4c24f97c74c3af.js",
+    "precache-manifest.1712bf51c7259acc2d208374d99c9afa.js": "/Portfolio-React/precache-manifest.1712bf51c7259acc2d208374d99c9afa.js",
     "service-worker.js": "/Portfolio-React/service-worker.js",
-    "static/css/main.55e9cd37.chunk.css.map": "/Portfolio-React/static/css/main.55e9cd37.chunk.css.map",
-    "static/js/2.d2cbc600.chunk.js.LICENSE.txt": "/Portfolio-React/static/js/2.d2cbc600.chunk.js.LICENSE.txt",
+    "static/css/main.12e80f5b.chunk.css.map": "/Portfolio-React/static/css/main.12e80f5b.chunk.css.map",
+    "static/js/2.94be463d.chunk.js.LICENSE.txt": "/Portfolio-React/static/js/2.94be463d.chunk.js.LICENSE.txt",
     "static/media/arrow-up-circle.svg": "/Portfolio-React/static/media/arrow-up-circle.76980d5c.svg",
     "static/media/business.svg": "/Portfolio-React/static/media/business.9a95c158.svg",
     "static/media/coding.svg": "/Portfolio-React/static/media/coding.ff579331.svg",
@@ -30,9 +30,9 @@
     "static/media/typescript.svg": "/Portfolio-React/static/media/typescript.2dcf8108.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.122f2cc7.js",
-    "static/js/2.d2cbc600.chunk.js",
-    "static/css/main.55e9cd37.chunk.css",
-    "static/js/main.d47ac553.chunk.js"
+    "static/js/runtime-main.0ff99c52.js",
+    "static/js/2.94be463d.chunk.js",
+    "static/css/main.12e80f5b.chunk.css",
+    "static/js/main.150aca0e.chunk.js"
   ]
 }
