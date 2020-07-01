@@ -158,6 +158,26 @@ footer .slideIcon{
 
 .conteudo-slide {
     height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo-slide h3{
+    margin: 20px 0px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.conteudo-slide a {
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.conteudo-slide a:hover{
+    font-size: 25px;
 }
 
 .barra-slide footer{

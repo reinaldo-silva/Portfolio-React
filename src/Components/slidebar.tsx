@@ -16,6 +16,18 @@ const SlideBar: React.FC<clickProps> = (props) => {
       props.close();
     }, 250);
   };
+
+  $(function () {
+    $(".readMore3").click(function (e) {
+      e.preventDefault();
+      $("#3").css({
+        opacity: "1",
+        visibility: "visible",
+      });
+      $("#terceiro").removeClass("modal-close");
+    });
+  });
+
   return (
     <>
       <div className={slideBarClass}>
@@ -23,13 +35,22 @@ const SlideBar: React.FC<clickProps> = (props) => {
           <FiXCircle className="slideIcon" />
         </button>
 
-        <div className="conteudo-slide"></div>
-        <footer>
-          
-          <div id="divisao"></div>
-          <FiPhone className="slideIcon"/>
-          <FiMail className="slideIcon"/>
+        <div className="conteudo-slide">
+          <a href="#projetos">
+            <h3>Projetos</h3>
+          </a>
+          <a href="#sobre">
+            <h3>Sobre</h3>
+          </a>
+          <a href="#skills">
+            <h3>Skills</h3>
+          </a>
+        </div>
 
+        <footer>
+          <div id="divisao"></div>
+          <FiPhone className="slideIcon" id="iconFone" />
+          <FiMail className="slideIcon" id="iconeEmail"/>
         </footer>
       </div>
     </>

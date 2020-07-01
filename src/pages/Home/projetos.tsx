@@ -1,12 +1,15 @@
 import React from "react";
 
+
 import "./projetos.css";
 
 const mapa = require("../../assets/signs.svg");
 const cartao = require("../../assets/business.svg");
 const graficos = require("../../assets/communications.svg");
 
+
 const Projetos = () => {
+
   return (
     <>
       <div className="titulo">
@@ -28,7 +31,7 @@ const Projetos = () => {
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Voluptate animi in quae laboriosam consectetur fuga!
               </p>
-              <a href="/" id="morePortfolio">
+              <a href="##" className="readMore1">
                 Read More
               </a>
             </div>
@@ -48,7 +51,7 @@ const Projetos = () => {
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Voluptate animi in quae laboriosam consectetur fuga!
               </p>
-              <a href="/">Read More</a>
+              <a href="##" className="readMore2">Read More</a>
             </div>
           </div>
         </div>
@@ -61,12 +64,12 @@ const Projetos = () => {
             </div>
           </div>
           <div className="face face2">
-            <div className="content">
+            <div className="content" id="muda">
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Voluptate animi in quae laboriosam consectetur fuga!
               </p>
-              <a href="/">Read More</a>
+              <a href="##" className="readMore3" >Read More</a>
             </div>
           </div>
         </div>
@@ -74,5 +77,6 @@ const Projetos = () => {
     </>
   );
 };
+
 
 export default Projetos;

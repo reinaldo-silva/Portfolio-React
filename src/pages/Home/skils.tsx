@@ -12,7 +12,7 @@ const node = require("../../assets/nodejs.svg");
 const Skils = () => {
   return (
     <>
-      <div className="titulo">
+      <div id="skills" className="titulo">
         <h1>Skills</h1>
         <div className="linha"></div>
       </div>

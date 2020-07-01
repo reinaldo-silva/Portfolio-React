@@ -5,7 +5,7 @@ const Foto = require("../../assets/foto.jpg")
 const Sobre = () => {
   return (
     <>
-      <div className="sobre">
+      <div id="sobre" className="sobre">
 
         <div className="titulo">
           <h1>Sobre mim</h1>
