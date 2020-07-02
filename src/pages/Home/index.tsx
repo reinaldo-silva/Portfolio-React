@@ -23,19 +23,22 @@ const graficos = require("../../assets/communications.svg");
 const Home = () => {
   $(function () {
 
-    $(".home").click(function(){
+    $("#click").click(function(){
+      $("#click, #3").removeClass("click-show");
       setSlideOpen(false);
-    })
+    });
 
     $("#iconFone").click(function (e) {
       e.preventDefault();
       $("#telefone").addClass('open-slide');
+      $("#click").removeClass("click-show");
       setSlideOpen(false);
     });
 
     $("#iconeEmail").click(function (e) {
       e.preventDefault();
       $("#email").addClass('open-slide');
+      $("#click").removeClass("click-show");
       setSlideOpen(false);
     });
 
@@ -49,40 +52,35 @@ const Home = () => {
 
     $(".readMore1").click(function (e) {
       e.preventDefault();
-      $("#1").css({
-        opacity: "1",
-        visibility: "visible",
-      });
+      $("#1").addClass("click-show");
       $("#primeiro").removeClass("modal-close");
     });
 
     $(".readMore2").click(function (e) {
       e.preventDefault();
-      $("#2").css({
-        opacity: "1",
-        visibility: "visible",
-      });
+      $("#2").addClass("click-show");
       $("#segundo").removeClass("modal-close");
     });
 
     $(".readMore3").click(function (e) {
       e.preventDefault();
       $("#3").css({
-        opacity: "1",
-        visibility: "visible",
+        "opacity": "1",
+        "visibility": 'visible'
       });
       $("#terceiro").removeClass("modal-close");
     });
 
-    $(".close").click(function () {
+    $(".close").click(function (e) {
+      e.preventDefault();
       $(".modal").addClass("modal-close");
-      setTimeout(function () {
-        $(".modal-container").css({
-          opacity: "0",
-          visibility: "hidden",
-        });
-      }, 600);
+      $(".click-hidden").removeClass("click-show");
+      $("#3").css({
+        "opacity": "0",
+        "visibility": 'hidden'
+      });
     });
+
   });
 
   const [slideOpen, setSlideOpen] = useState(false);
@@ -90,6 +88,7 @@ const Home = () => {
   const openHandler = () => {
     if (!slideOpen) {
       setSlideOpen(true);
+      $("#click").addClass("click-show");
     } else {
       setSlideOpen(false);
     }
@@ -143,7 +142,7 @@ const Home = () => {
         <span>E-mail: reinaldo.silva.jr@outlook.com</span>
         <span>Telefone: (17) 99111-5889</span>
       </div>
-      <div id="1" className="modal-container">
+      <div id="1" className="click-hidden">
         <div id="primeiro" className="modal modal-close">
           <p className="close">X</p>
           <div className="modal-section">
@@ -167,7 +166,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div id="2" className="modal-container">
+      <div id="2" className="click-hidden">
         <div id="segundo" className="modal modal-close">
           <p className="close">X</p>
           <div className="modal-section">
@@ -191,7 +190,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div id="3" className="modal-container">
+      <div id="3" className="click-hidden">
         <div id="terceiro" className="modal modal-close">
           <p className="close">X</p>
           <div className="modal-section">
@@ -222,6 +221,8 @@ const Home = () => {
       <div id="email" className="modal-container-slide">
         <h1>reinaldo.silva.jr@outlook.com</h1>
       </div>
+
+      <div id="click" className="click-hidden"></div>
     </>
   );
 };

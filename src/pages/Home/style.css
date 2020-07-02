@@ -150,10 +150,11 @@ footer .slideIcon{
     color: #FFF;
     width: 250px;
     position: fixed;
-    z-index: 200;
+    z-index: 1001;
     left: -100%;
     border-right: 0.5px solid #FFF;
     animation: slide-open 0.75s forwards;
+    transition: 0.3s;
 }
 
 .conteudo-slide {
@@ -193,6 +194,7 @@ footer .slideIcon{
 .barra-slide.close{
     left: 0;
     animation: slide-closed 1s forwards;
+    transition: 0.3s;
 }
 
 @keyframes slide-open {
@@ -201,4 +203,25 @@ footer .slideIcon{
 
 @keyframes slide-closed {
     100%{ left: -100%}
+}
+
+.click-hidden{
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    transition: 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.click-show{
+    opacity: 1;
+    visibility: visible;
 }

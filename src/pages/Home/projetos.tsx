@@ -69,7 +69,7 @@ const Projetos = () => {
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Voluptate animi in quae laboriosam consectetur fuga!
               </p>
-              <a href="##" className="readMore3" >Read More</a>
+              <a href="##" className="readMore3">Read More</a>
             </div>
           </div>
         </div>
