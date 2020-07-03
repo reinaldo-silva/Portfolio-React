@@ -93,3 +93,21 @@ body::-webkit-scrollbar-track{
 body::-webkit-scrollbar-thumb{
     background: #4218D9;
 }
+
+/*------------------------------------------------------------------------------------------------*/
+
+h1.writer::after{
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca 0.75s infinite;
+  }
+
+  @keyframes pisca {
+    0%, 100%{
+      opacity: 1;
+    }
+    50%{
+      opacity: 0;
+    }
+  }

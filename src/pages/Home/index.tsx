@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, ReactElement, ReactHTMLElement } from "react";
 import "./style.css";
 import { FiChevronDown } from "react-icons/fi";
 
@@ -81,6 +81,22 @@ const Home = () => {
       });
     });
 
+    const typeWriter = (elemento: any) => {
+      const textoArray = elemento.innerHTML.split('');//divide o texto em diferentes partes do array// aqui vai dividir todas as letras pois não atribui um valor para ele buscar e dividir 
+      elemento.innerHTML = '';
+  //forEach: para cada
+      textoArray.forEach((letra:any, i:any) => {
+        //console.log(letra);
+        setTimeout(() => elemento.innerHTML += letra, 100 * i);
+      });
+    }
+  
+  const titulo = document.querySelector('h1.writer');
+  if(titulo){
+  typeWriter(titulo);
+  }
+  
+
   });
 
   const [slideOpen, setSlideOpen] = useState(false);
@@ -119,7 +135,7 @@ const Home = () => {
 
       <div className="home">
         <div className="conteudo">
-          <h1>Developer Full Stack</h1>
+          <h1 className="writer">Developer Full Stack</h1>
           <a href="#projetos">
             <span>
               <FiChevronDown fontSize={40} />
