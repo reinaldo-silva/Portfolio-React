@@ -22,32 +22,31 @@ const graficos = require("../../assets/communications.svg");
 
 const Home = () => {
   $(function () {
-
-    $("#click").click(function(){
+    $("#click").click(function () {
       $("#click, #3").removeClass("click-show");
       setSlideOpen(false);
     });
 
     $("#iconFone").click(function (e) {
       e.preventDefault();
-      $("#telefone").addClass('open-slide');
+      $("#telefone").addClass("open-slide");
       $("#click").removeClass("click-show");
       setSlideOpen(false);
     });
 
     $("#iconeEmail").click(function (e) {
       e.preventDefault();
-      $("#email").addClass('open-slide');
+      $("#email").addClass("open-slide");
       $("#click").removeClass("click-show");
       setSlideOpen(false);
     });
 
-    $("#telefone").click(function(){
-      $("#telefone").removeClass('open-slide');
+    $("#telefone").click(function () {
+      $("#telefone").removeClass("open-slide");
     });
 
-    $("#email").click(function(){
-      $("#email").removeClass('open-slide');
+    $("#email").click(function () {
+      $("#email").removeClass("open-slide");
     });
 
     $(".readMore1").click(function (e) {
@@ -65,8 +64,8 @@ const Home = () => {
     $(".readMore3").click(function (e) {
       e.preventDefault();
       $("#3").css({
-        "opacity": "1",
-        "visibility": 'visible'
+        opacity: "1",
+        visibility: "visible",
       });
       $("#terceiro").removeClass("modal-close");
     });
@@ -76,30 +75,30 @@ const Home = () => {
       $(".modal").addClass("modal-close");
       $(".click-hidden").removeClass("click-show");
       $("#3").css({
-        "opacity": "0",
-        "visibility": 'hidden'
+        opacity: "0",
+        visibility: "hidden",
       });
     });
 
     const typeWriter = (elemento: any) => {
-      const textoArray = elemento.innerHTML.split('');//divide o texto em diferentes partes do array// aqui vai dividir todas as letras pois não atribui um valor para ele buscar e dividir 
-      elemento.innerHTML = '';
-  //forEach: para cada
-      textoArray.forEach((letra:any, i:any) => {
+      const textoArray = elemento.innerHTML.split(""); //divide o texto em diferentes partes do array// aqui vai dividir todas as letras pois não atribui um valor para ele buscar e dividir
+      elemento.innerHTML = "";
+      //forEach: para cada
+      setTimeout(function(){ 
+        textoArray.forEach((letra: any, i: any) => {
         //console.log(letra);
-        setTimeout(() => elemento.innerHTML += letra, 100 * i);
-      });
+        setTimeout(() => (elemento.innerHTML += letra), 100 * i);
+      })
+    }, 1500);
       setFlag(1);
-    }
-  
-  const titulo = document.querySelector('h1.writer');
-  if(titulo){
-    if(flag == 0)
-  typeWriter(titulo);
-  }
-  
+    };
 
+    const titulo = document.querySelector("h1.writer");
+    if (titulo) {
+      if (flag == 0) typeWriter(titulo);
+    }
   });
+
   const [flag, setFlag] = useState(0);
   const [slideOpen, setSlideOpen] = useState(false);
 
@@ -137,7 +136,7 @@ const Home = () => {
 
       <div className="home">
         <div className="conteudo">
-          <h1 className="writer">Developer Full Stack</h1>
+          <h1 className="writer">Developer full stack</h1>
           <a href="#projetos">
             <span>
               <FiChevronDown fontSize={40} />
