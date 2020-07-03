@@ -28,8 +28,7 @@ const Projetos = () => {
           <div className="face face2">
             <div className="content">
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Voluptate animi in quae laboriosam consectetur fuga!
+              Portfólio desenvolvido para ser postado todos os o projetos ja criados ou em desenvolvimento.
               </p>
               <a href="##" className="readMore1">
                 Read More
@@ -48,8 +47,7 @@ const Projetos = () => {
           <div className="face face2">
             <div className="content">
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Voluptate animi in quae laboriosam consectetur fuga!
+              App de geolocalização que facilite a movimentação em ambientes fechados.
               </p>
               <a href="##" className="readMore2">Read More</a>
             </div>
@@ -66,8 +64,7 @@ const Projetos = () => {
           <div className="face face2">
             <div className="content" id="muda">
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Voluptate animi in quae laboriosam consectetur fuga!
+                Projeto que fornecerá aulas desenvolvidas e planejadas pelos próprios alunos da Universidade.
               </p>
               <a href="##" className="readMore3">Read More</a>
             </div>
