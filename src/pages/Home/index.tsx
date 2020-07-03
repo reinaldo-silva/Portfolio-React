@@ -89,16 +89,18 @@ const Home = () => {
         //console.log(letra);
         setTimeout(() => elemento.innerHTML += letra, 100 * i);
       });
+      setFlag(1);
     }
   
   const titulo = document.querySelector('h1.writer');
   if(titulo){
+    if(flag == 0)
   typeWriter(titulo);
   }
   
 
   });
-
+  const [flag, setFlag] = useState(0);
   const [slideOpen, setSlideOpen] = useState(false);
 
   const openHandler = () => {
